@@ -1,38 +1,51 @@
-# EX 10 C program to find the factorial of a given number using a function with arguments and return type.
+# EX 11 C Program to convert a given decimal value to binary using function without arguments with return type.
 ## DATE:
 ## AIM:
-To write a C program to find the factorial of a given number using a function with arguments and return type.
+To write a C Program to convert a given decimal value to binary using function without arguments with return type.
 
 ## Algorithm
-1.Start.
-2.Declare the variables.
-3.Prompt the user to enter a value.
-4.Read the value using scanf.
-5.Enter factorial of the number.
-6.End. 
+Start.
+Declare a integer variable
+Define a function named dectobin.
+Return the integer.
+Read the value using scanf.
+Convert decimal to binary value.
+Print the dectobin
+End. 
 
 ## Program:
-```c
-#include <stdio.h>
-int main() {
- int n, i;
- unsigned long long factorial = 1;
- scanf("%d", &n);
- if (n < 0) {
- printf("Factorial is not defined for negative numbers.\n");
- } else {
- for (i = 1; i <= n; i++) {
- factorial *= i;
- }
- printf("Factorial of %d = %llu\n", n, factorial);
- }
- return 0;
-}
+```
+/*
+Program to C Program to convert a given decimal value to binary using function without arguments with return type.
+Developed by: Santhosh J 
+RegisterNumber: 212223060248 
+*/
+  #include<stdio.h> 
+  Int dectobin(int d){ 
+int bin =0,base=1,rem; 
+while(d>0) 
+{ 
+rem=d%2; 
+bin=bin+rem*base; 
+d=d/2; 
+base=base*10; 
+} 
+printf(" = %d in binary",bin); 
+return 0; 
+} 
+int main() 
+{ 
+int dec; 
+scanf("%d",&dec); 
+printf("%d in decimal",dec); 
+dectobin(dec); 
+return 0; 
+} 
+
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/2f222b2b-2dac-422c-9d73-4c16ba57ab7c)
-
+<img width="821" height="236" alt="441027366-6092ab3b-7c24-4c24-8c3b-23662be759ee" src="https://github.com/user-attachments/assets/7b11d01f-c094-4d5a-b4f6-8002285380b8" />
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
